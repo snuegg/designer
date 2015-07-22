@@ -14,3 +14,9 @@
 </select>
 	<input type="submit" value="find">
 </form>
+<% @l.reverse.each do |l|%>
+	<%= l.hd_id %>
+	<%= l.score1 %>
+	<%= l.score2 %>
+	<br>
+<% end %>

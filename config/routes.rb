@@ -1,4 +1,5 @@
 Designer::Application.routes.draw do
+	root 'home#search'
 	get 'home/search' => 'home#search'
 	get 'home/sview' => 'home#sview'
   # The priority is based upon order of creation: first created -> highest priority.

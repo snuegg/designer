@@ -1,6 +1,6 @@
 class HomeController < ApplicationController
 	def search
-		
+		@l=Score.all	
 	end
 	
 	def sview
