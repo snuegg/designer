@@ -1,5 +1,5 @@
 <h4><a href="/">뭘고민헤어</a> || <a href="/home/search">search</a> | <a href="/event">event</a> | <a href="/mypage">mypage</a>||
-<% if session[:user_id}.nil? %>
+<% if session[:user_id].nil? %>
  <a href="/users/signup">회원가입</a>|<a href="/users/login">로그인</a>
 <% else %>
 <a href="/users/logout_complete">로그아웃</a>

@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   def signup_complete
 		user = User.new
 		user.name = params[:username]
-		if parmas[:password] == params[:retype_password]
+		if params[:password] == params[:retype_password]
 			user.password = params[:password]
 			if user.save
 				flash[:alert] = "성공적으로 가입되었습니다."
