@@ -1,4 +1,6 @@
 class HomeController < ApplicationController
+	before_action :login_check
+  skip_before_action  :login_check, :only => [:search, :sview, :event]
 	def search
 		@l=Score.all	
 	end
