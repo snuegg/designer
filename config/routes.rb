@@ -1,4 +1,9 @@
 Designer::Application.routes.draw do
+  get "users/signup"
+ 	post "users/signup_complete"
+  get "users/login"
+  post "users/login_complete"
+  get "users/logout_complete"
 	root 'home#search'
 	get 'home/search' => 'home#search'
 	get 'home/sview' => 'home#sview'
