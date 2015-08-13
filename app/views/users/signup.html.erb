@@ -1,4 +1,3 @@
-<p><%= flash[:alert] %></p>
 <h2>회원 가입하기</h2>
 <%= form_tag("/users/signup_complete", method: "post") do %>
 <p>아이디:</p>  <%= text_field_tag(:username) %>
