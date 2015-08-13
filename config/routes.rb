@@ -1,4 +1,5 @@
 Designer::Application.routes.draw do
+  get "home/hdview"
   get "users/signup"
  	post "users/signup_complete"
   get "users/login"

@@ -1,7 +1,8 @@
 <%= render :partial => "home/list" %>
-<% @find.reverse.each do |f|%>
-	<%= f.hd_id%>
-	<%= f.score1%>
-	<%= f.score2%>
+<% @find.reverse.each do |l|%>
+	<%= l.hd_id%>
+	<%= l.score1%>
+	<%= l.score2%>
+<%= link_to "자세히보기",controller: "home", action: "hdview",:hd_id=>l.hd_id%>
 	<br>
 <% end %>

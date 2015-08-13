@@ -15,7 +15,10 @@ class HomeController < ApplicationController
 		@find=Score.where(hd_city_id: @city).order(:score2)
 		end
 	end
-
+	def hdview
+		@hd_id=params[:hd_id]
+		@hdview=Score.where(hd_id: @hd_id)
+	end
 	def event
 	end
 	
